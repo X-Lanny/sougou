@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rencaimatou</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style type="text/css">
+        .page-header{
+            width: 1184px;
+            padding: 0 calc((100% - 1184px) / 2);
+            background: #ffffff;
+            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.08);
+            height: 72px;
+            line-height: 72px;
+            position: relative;
+        }
+        .logo-container{
+            width: 998px;
+            margin: 0 auto;
+            display: flex;
+            height: 100%;
+            align-items: center;
+            position: absolute;
+            left:0;
+            /* 那么容器内的所有 Flex 项目将在交叉轴上居中对齐。这意味着它们的中心点将位于交叉轴的中心。 */
+            /* max-width: 100%; */
+        }
+        .logo-container img{
+            /* margin-left: 0px; */
+            width: 259px;
+            height: 36px;
+            align-items: center;
+        }
+        .button-container{
+            display: flex;
+            align-items: center;
+            width: 186px;
+            height: 32px;
+            position: absolute;
+            right: 0;
+            top:25%;
+        }
+        .button-container .login-btn{
+            width: 88px;
+            height: 32px;
+            border-radius: 2px;
+            border: 1px solid #1764e8;
+            letter-spacing: 2px;
+            /*  */
+            font-size: 14px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #1764e8;
+        }    
+        .button-container .apply-btn{
+            width: 88px;
+            height: 32px;
+            border-radius: 2px;
+            border: 1px solid #1764e8;
+            background: #1764e8;
+            font-size: 14px;
+            font-weight: 500;
+            color: #ffffff;
+            /* vertical-align: middle; */
+            vertical-align: middle;
+            position: absolute;
+            right: 0;
+        }
+        .banner-section{
+            height: 418px;
+            width: 100%;
+            min-width: 1184px;
+            background: url(./image/banner-side.97a04d37.png) repeat-x;
+            background: url(./image/banner.c10dc550.png) no-repeat center / contain;
+            background-size: auto 100%;
+            position: relative;
+        }
+        .banner-container{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 96px 0 0;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .banner-container .banner-title{
+            height: 40px;
+            font-size: 32px;
+            font-family: AlibabaPuHuiTiM;
+            color: #ffffff;
+            line-height: 40px;
+            letter-spacing: 4px;
+            margin-bottom: 0;
+            /* position:absolute; */
+            /* vertical-align: middle; */
+        }
+        .banner-container .banner-subtitle{
+            height: 28px;
+            font-size: 20px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #ffffff;
+            line-height: 28px;
+            margin-top: 12px;
+        }
+        .section-wrap{
+            /* width: 100%; */
+            height: 418px;
+            min-width: 1184px;
+            margin: 0 auto;
+            background: #ffffff;
+        }
+
+
+        .section-wrap-product{
+            height: 418px;
+            min-width: 1184px;
+            margin: 0 auto;
+            background: #ffffff;
+        }
+
+
+        .section-wrap-product{
+            min-width: 1440px;
+            width: 100%;
+            height: 348px;
+            background-color: #196eff;
+        }
+
+
+        .section-leg{
+            width: 100%;
+            height: 84px;
+            min-width: 1184px;
+            margin: 0 auto;
+            background: #ffffff;
+        }
+
+
+        .page-footer{
+            width: 100%;
+            height: 64px;
+            min-width: 1184px;
+            margin: 0 auto;
+            background: #ffffff;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="page-header"> 
+        <div class="logo-container">
+            <img src="./image/nav-logo.1cfbce45.png" alt="">
+            
+        </div>
+        <div class="button-container">
+            <button class="login-btn">
+                <span>登录</span>
+            </button>
+            <button class="apply-btn">
+                <span>申请试用</span>
+            </button>
+        </div>     
+    </div>
+    <div class="page-body">
+        <div class="banner-section">
+            <div class="banner-container">
+                <p class="banner-title">欢迎来到人才码头</p>
+                <p class="banner-subtitle">量化技能，为您提供更加可靠、准确的技能评估数据</p>
+            </div>
+        </div>
+        <div class="section-wrap"></div>
+        <div class="section-wrap"></div>
+        <div class="section-wrap-product"></div>
+        <div class="section-wrap-apply"></div>
+        <div class="section-leg"></div>
+    </div>
+    <div class="page-footer"></div>
+</body>
+</html>
