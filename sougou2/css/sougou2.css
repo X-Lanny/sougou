@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    position: relative;
+    height: 100%;
+    display: flex;
+    min-width: 1000px;
+    background: #fff;
+    font-size: 13px;
+    flex-direction: column;
+    font-family: arial,'pingfang sc',stheiti,'microsoft yahei',sans-serif;
+    font-size: 13px;
+    overflow-y: scroll; 
+    /* 如果内容溢出了容器高度，就显示滚动条，以便用户可以滚动查看溢出的内容。 */
+}
+.page-header{
+    position: relative;
+    width:100% ;
+    min-width:1000px ;
+    padding: 11px 0;
+    font-size: 13px;
+    font-family: arial,'pingfang sc',stheiti,'microsoft yahei',sans-serif;
+    line-height: 24px;
+}
+.page-header .header-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 542px;
+    height: 24px;
+    margin-left: 20px;
+}
+.header-nav span{
+    color: #ff5a34;
+    font-weight: 700;
+}
+.header-nav a{
+    color: rgba(0, 0, 0, .7);
+    text-decoration: none; 
+}
+.header-nav .show-more{
+    position: relative;
+    height: 24px;
+    width: 36px;
+}
+.header-nav .show-more .show-more-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+    line-height: 29px;
+    background-color: #fff;
+    opacity: 0;
+    border-radius: 3px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .2);
+}
+.header-nav .show-more:hover .show-more-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+    line-height: 29px;
+    border-radius: 3px;
+    opacity: 1;
+    border: 1px solid #d9d9d9;
+}
+
+.header-nav .show-more .show-more-list .show-more-list-item:hover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px; 
+    background-color:#ff5a34;
+    color: #fff;
+}
+.header-nav .show-more span.show-more-arr{
+    position: absolute;
+    right:0;
+    top:10px;
+    transition: all .25s;
+    border-left: 4px dashed transparent;
+    border-top: 4px solid #666;
+    border-right: 4px dashed transparent;
+    width: 0;
+    height: 0;
+}   
+/* show-more and arrow hover */
+.show-more:hover .show-more-title{
+    color: #ff5a34;
+}
+.show-more:hover span.show-more-arr{
+    transform: rotate(180deg);
+    border-top: 4px solid #ff5a34;
+}
+.header-nav .show-more span .show-more-arr:hover{
+    position: absolute;
+    right:0;
+    bottom:10px;
+    transition: all .25s;
+    border-left: 4px dashed transparent;
+    border-bottom: 4px solid #666;
+    border-right: 4px dashed transparent;
+    width: 0;
+    height: 0;
+}
+.header-nav a:hover{
+    color: #ff5a34;
+    cursor: pointer;
+}
+.page-header .header-right-box{
+    position: absolute;
+    right:8px;
+    top:10px;
+    box-sizing: content-box;
+    height: 14px;
+    width: 64px;
+    font-size: 12px;
+    z-index: 100;
+}
+.page-header .header-right-box a.access{
+    padding-left: 8px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, .7);
+}
+.page-header .header-right-box a.access:hover{
+    text-decoration: none;
+    color: rgba(0, 0, 0);
+}
+.page-mainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex:1; */
+}
+.page-mainer .mainer-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 207px;
+    height: calc(37vh - 46px);
+}
+.page-mainer .mainer-logo img{
+    width: 440px;
+    height: 140px;
+    z-index: 1000;
+}
+.page-mainer .search-content{
+    position: relative;
+    margin: 0 auto;
+    width: 650px;
+    border-radius: 3px;
+    height: 42px;
+    border: solid 1px #ababab;
+    padding: 0 154px 0 10px;
+    background: #fff;
+}
+.page-mainer .search-content .search-content-input{
+    width: 489px;
+    margin: 0;
+    border: 0;
+    padding: 12px 0;
+    height: 18px;
+    outline: 0;
+}
+.page-mainer .search-content .search-content-enter-input{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    border-radius: 0 3px 3px 0;
+    background-color: #fafafa;
+    border-left: 1px solid #e6e6e6;
+}
+.page-mainer .search-content .search-content-btn{
+    width: 99px;
+    height: 42px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    outline: 0;
+    font-size: 16px;
+    font-family: arial,'pingfang sc',stheiti,'microsoft yahei',sans-serif;
+}
+/* search-content hover */
+.page-mainer .search-content:hover{
+    border: solid 1px #666;
+}
+/* .button hover */
+.page-mainer .search-content .search-content-btn:hover{
+    background-color: #f2f2f2;
+}
+.page-footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    width: 1000px;
+    left: 50%;
+    margin-left: -500px;
+    font-family: arial,'pingfang sc',stheiti,'microsoft yahei',sans-serif;
+    padding-left: 74px;
+    padding-bottom: 28px;
+    display: flex;
+    align-items: center;
+}
+.page-footer .footer-info{
+    line-height: 22px;
+}
+.page-footer .footer-info a{
+    text-decoration: none;
+}
+.page-footer .footer-info a:hover{
+    color: rgba(0,0,0);
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.page-footer .footer-info .w{
+    display: inline-block;
+    margin: 0;
+    color: rgba(0,0,0,.7);
+    text-decoration: none;
+}
+.page-footer .footer-info .line{
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    margin: 5px 10px 0px;
+    background: #e4e4e4;
+}
+.page-footer .footer-info .g{
+    color: rgba(0,0,0,.5)
+}
+.page-footer .footer-img{
+    width: 86px;
+    height: 40px;
+    background:url(https://dlweb.sogoucdn.com/pcsearch/web/index/images/fit_older_b3c0b28.png) no-repeat;
+    background-size: 86px;
+    margin-left: 8px;
+    margin-top: 46px;
+}
